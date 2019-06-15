@@ -37,7 +37,8 @@ class ViewController: UIViewController, CNContactPickerDelegate {
         cnPicker.delegate = self
         cnPicker.displayedPropertyKeys = [CNContactGivenNameKey, CNContactEmailAddressesKey]
         self.present(cnPicker, animated: true, completion: nil)
-        print()
+       // print()
+        // bugFix
     }
   
     func contactPicker(_ picker: CNContactPickerViewController, didSelect contacts: [CNContact]) {
